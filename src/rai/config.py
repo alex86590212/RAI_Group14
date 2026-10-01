@@ -1,11 +1,14 @@
 from pathlib import Path
 
-import yaml
-
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_CONFIG = ROOT / "configs" / "default.yaml"
+RAW_DIR = ROOT / "data" / "raw"
+RESULTS_DIR = ROOT / "results"
 
+UCI_ID = 296
+POSITIVE_LABEL = "<30"
+GROUP_COL = "patient_nbr"
 
-def load_config(path: Path = DEFAULT_CONFIG) -> dict:
-    with open(path) as f:
-        return yaml.safe_load(f)
+SEEDS = list(range(20))
+TEST_SIZE = 0.2
+VAL_SIZE = 0.2
+N_BOOTSTRAP = 1000

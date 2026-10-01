@@ -25,13 +25,12 @@ uv run python scripts/03_fairness.py
 uv run python scripts/04_intervention.py
 ```
 
-Seeds and settings live in `configs/default.yaml`. Outputs go to `results/`.
+Seeds and settings live in `src/rai/config.py`. Outputs go to `results/`.
 
 ## Layout
 
 - `src/rai/`: library code (data, preprocessing, splitting, audit, models, fairness, intervention, evaluation)
 - `scripts/`: numbered entry points, run in order
-- `configs/`: seeds and settings
 - `tests/`: pytest suite
 - `notebooks/`: exploration only
 - `DATA_CARD.md`, `ATTRIBUTION.md`, `CONTRIBUTIONS.md`: required deliverable documents

@@ -1348,7 +1348,6 @@ dependencies = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
-    { name = "pyyaml" },
     { name = "scikit-learn" },
     { name = "ucimlrepo" },
 ]
@@ -1366,7 +1365,6 @@ requires-dist = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
-    { name = "pyyaml" },
     { name = "scikit-learn" },
     { name = "ucimlrepo" },
 ]
