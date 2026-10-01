@@ -1,0 +1,7 @@
+# Individual Contributions
+
+| Member | Contribution |
+|--------|--------------|
+|        |              |
+|        |              |
+|        |              |
