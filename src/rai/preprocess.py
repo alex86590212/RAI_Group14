@@ -2,7 +2,7 @@ import logging
 
 import pandas as pd
 
-from rai.config import POSITIVE_LABEL
+from rai.config import POSITIVE_LABEL, TARGET_COL
 
 logger = logging.getLogger(__name__)
 
@@ -13,7 +13,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     ammount = len(df)
     df = df[~df["discharge_disposition_id"].isin(EXCLUDED_DISCHARGE_DISPOSITION_IDS)].copy()
     logger.info("Excluded %d death/hospice rows (%d -> %d)", ammount - len(df), ammount, len(df))
-    df["is_under_30"] = (df["readmitted"] == POSITIVE_LABEL).astype(int)
+    df[TARGET_COL] =(df["readmitted"] == POSITIVE_LABEL).astype(int)
     df["race"] = df["race"].fillna("Unknown")
     df["max_glu_serum"] = df["max_glu_serum"].fillna("Not measured")
     df["A1Cresult"] = df["A1Cresult"].fillna("Not measured")
