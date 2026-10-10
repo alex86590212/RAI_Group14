@@ -11,6 +11,7 @@ dependencies = [
     "fairlearn",
     "matplotlib",
     "ucimlrepo",
+    "scipy>=1.17.1",
 ]
 
 [dependency-groups]
