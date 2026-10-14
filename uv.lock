@@ -1349,6 +1349,7 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
+    { name = "scipy" },
     { name = "ucimlrepo" },
 ]
 
@@ -1366,6 +1367,7 @@ requires-dist = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "scikit-learn" },
+    { name = "scipy", specifier = ">=1.17.1" },
     { name = "ucimlrepo" },
 ]
 
